@@ -1,7 +1,152 @@
+$blue: #007bff;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
+$white: #fff;
+$gray: #6c757d;
+$gray-dark: #343a40;
+$primary: #007bff;
+$secondary: #6c757d;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+$dark: #343a40;
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
 body {
 	font-family: sans-serif;
-
-	img {
-		width: 100%;
+	font-family: NewsGothicMT;
+	background-image: url("../images/background.jpg");
+	background-size: cover;
+	text-align: center;
+	color: $light;
+	background-color: #000;
+	@media screen and (min-width: $breakpoint-md) {
+		.top-bar {
+			width: 100%;
+			height: 36px;
+			//	border: 1px solid $light;
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			font-size: 1rem;
+			font-weight: 400;
+			line-height: 1.5;
+			width: 100%;
+			padding-right: 15px;
+			padding-left: 15px;
+			margin-right: auto;
+			margin-left: auto;
+			max-width: 1373px;
+		}
 	}
+	@media screen and (max-width: $breakpoint-md) {
+		.top-bar {
+			width: 100%;
+			height: 36px;
+			position: relative;
+			align-items: center;
+			justify-content: center;
+			display: block;
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			font-size: 1rem;
+			font-weight: 400;
+			line-height: 1.5;
+			width: 100%;
+			padding-right: 15px;
+			padding-left: 15px;
+			margin-right: auto;
+			margin-left: auto;
+			max-width: 1373px;
+		}
+	}
+
+	.headlist {
+		min-width: 160px;
+		display: block;
+		border: 3px solid $light;
+		height: 36px;
+		font-size: 20px;
+		display: block;
+		height: 100%;
+		padding: 0 10px;
+		text-decoration: none;
+		text-transform: uppercase;
+		color: $light;
+		position: relative;
+	}
+
+	.recipe{
+		flex-direction: column;
+		flex:400px;
+		width: 40%;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		font-size: 1.5rem;
+		font-weight: 400;
+		line-height: 1.5;
+		width: 100%;
+		padding-right: 15px;
+		padding-left: 15px;
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 600px;
+
+	}
+	.col_ {
+		display:flex;
+		flex-wrap: wrap;
+	}
+
+	@media screen and (min-width: $breakpoint-md) {
+		img {
+			width: 100%;
+			margin-top: 20px;
+			margin-top: 20px;
+			margin-left: auto;
+			margin-right: auto;
+			height: auto;
+			width: 60%;
+		}
+	}
+	@media screen and (max-width: $breakpoint-md) {
+		img {
+			width: 100%;
+			margin-top: 80px;
+			margin-top: 80px;
+			margin-left: 10px;
+			margin-right: 10px;
+			height: auto;
+			width: 80%;
+		}
+	}
+}
+
+*,
+::after,
+::before {
+	box-sizing: border-box;
 }
